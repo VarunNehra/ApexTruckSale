@@ -1,0 +1,6 @@
+{
+  "name": "Apex Truck Sales",
+  "description": "Next-generation commercial trucking solutions: semi-truck sales, purchase evaluations, commercial tires, and rapid roadside assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
