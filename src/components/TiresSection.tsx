@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Disc, ShieldCheck, CheckCircle2, ArrowRight, Calculator, AlertCircle } from 'lucide-react';
+import commercialTireImage from '../assets/images/commercial_truck_tire_1792014067130.jpg';
 import { TIRE_INVENTORY, TireProduct } from '../data/inventory';
 
 interface TiresSectionProps {
@@ -73,7 +74,7 @@ export const TiresSection: React.FC<TiresSectionProps> = ({ onRequestTireQuote }
             <div className="lg:col-span-5 relative">
               <div className="aspect-[4/3] rounded-xl overflow-hidden bg-slate-900 border border-slate-800">
                 <img
-                  src="/src/assets/images/commercial_truck_tire_1792014067130.jpg"
+                  src={commercialTireImage}
                   alt="Commercial heavy-duty steer tire in studio setting"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

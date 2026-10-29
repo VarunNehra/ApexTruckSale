@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Wrench, Shield, ChevronDown, CheckCircle2, Truck, Disc } from 'lucide-react';
 import { motion } from 'motion/react';
+import flagshipTruckImage from '../assets/images/apex_red_flagship_truck_1792015370442.jpg';
 import { ApexLogo } from './ApexLogo';
 
 interface HeroProps {
@@ -14,7 +15,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTrucks, onGetRoadside }) =>
       {/* Background Flagship Crimson Semi-Truck with measured gradient scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/apex_red_flagship_truck_1792015370442.jpg"
+          src={flagshipTruckImage}
           alt="Gleaming crimson red and chrome Class 8 semi-truck on American highway at dusk"
           className="w-full h-full object-cover object-center scale-105 transform motion-safe:transition-transform motion-safe:duration-1000"
           referrerPolicy="no-referrer"

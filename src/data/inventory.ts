@@ -1,3 +1,6 @@
+import heroTruckImage from '../assets/images/hero_apex_semi_truck_1792014064872.jpg';
+import dealershipTruckImage from '../assets/images/truck_fleet_dealership_1792014065820.jpg';
+
 export interface TruckListing {
   id: string;
   vin: string;
@@ -67,7 +70,7 @@ export const TRUCK_INVENTORY: TruckListing[] = [
     tires: 'Virgin Michelin X Line Energy (90%+)',
     fuelCapacity: '250 Gal Dual Aluminum',
     color: 'Obsidian Metallic Gray',
-    image: '/src/assets/images/hero_apex_semi_truck_1792014064872.jpg',
+    image: heroTruckImage,
     features: [
       'Detroit Assurance 5.0 Collision Mitigation',
       'Lane Departure Warning & Active Brake Assist',
@@ -101,7 +104,7 @@ export const TRUCK_INVENTORY: TruckListing[] = [
     tires: 'Bridgestone Ecopia Steer & Drive (85%)',
     fuelCapacity: '260 Gal Dual Aluminum Tanks',
     color: 'Deep Sapphire Pearl',
-    image: '/src/assets/images/truck_fleet_dealership_1792014065820.jpg',
+    image: dealershipTruckImage,
     features: [
       '15-inch Digital Instrument Cluster',
       'Peterbilt SmartLINQ Diagnostics',
@@ -135,7 +138,7 @@ export const TRUCK_INVENTORY: TruckListing[] = [
     tires: 'Goodyear Endurance LHS (80%)',
     fuelCapacity: '240 Gal Split Tanks',
     color: 'Apex Radiant Crimson',
-    image: '/src/assets/images/hero_apex_semi_truck_1792014064872.jpg',
+    image: heroTruckImage,
     features: [
       'Digital Vision Electronic Mirrors Kit Ready',
       'Kenworth TruckTech+ Remote Diagnostics',
@@ -169,7 +172,7 @@ export const TRUCK_INVENTORY: TruckListing[] = [
     tires: 'Michelin X Line Energy 295/75R22.5',
     fuelCapacity: '250 Gal Aluminum Dual',
     color: 'Titanium Frost Silver',
-    image: '/src/assets/images/hero_apex_semi_truck_1792014064872.jpg',
+    image: heroTruckImage,
     features: [
       'Volvo Dynamic Steering (VDS) System',
       'Volvo Active Driver Assist (VADA) 2.0',
@@ -203,7 +206,7 @@ export const TRUCK_INVENTORY: TruckListing[] = [
     tires: 'Continental Conti EcoPlus (75%)',
     fuelCapacity: '230 Gal Dual Tanks',
     color: 'Graphite Black Matte Accents',
-    image: '/src/assets/images/truck_fleet_dealership_1792014065820.jpg',
+    image: dealershipTruckImage,
     features: [
       'Mack ClearTech One Exhaust Aftertreatment',
       'Mack GuardDog Connect 24/7 Monitoring',
@@ -237,7 +240,7 @@ export const TRUCK_INVENTORY: TruckListing[] = [
     tires: 'Firestone FS591 Commercial Steer & Drive',
     fuelCapacity: '240 Gal Dual Tanks',
     color: 'Onyx Black High Gloss',
-    image: '/src/assets/images/truck_fleet_dealership_1792014065820.jpg',
+    image: dealershipTruckImage,
     features: [
       'International OnCommand Connection Telematics',
       'Ergonomic Driver-Centric Cockpit Console',

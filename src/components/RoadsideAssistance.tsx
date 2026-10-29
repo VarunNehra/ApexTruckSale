@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, AlertTriangle, Wrench, CheckCircle2, MapPin, ArrowRight, Radio } from 'lucide-react';
+import roadsideTruckImage from '../assets/images/roadside_service_truck_1792014066701.jpg';
 import { ROADSIDE_SERVICES } from '../data/inventory';
 
 export const RoadsideAssistance: React.FC = () => {
@@ -180,7 +181,7 @@ export const RoadsideAssistance: React.FC = () => {
           <div className="lg:col-span-5 space-y-4">
             <div className="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl relative">
               <img
-                src="/src/assets/images/roadside_service_truck_1792014066701.jpg"
+                src={roadsideTruckImage}
                 alt="Professional roadside commercial service truck assisting semi-truck on highway shoulder"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
