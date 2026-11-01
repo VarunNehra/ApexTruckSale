@@ -76,30 +76,30 @@ export const HowItWorks: React.FC = () => {
   const currentWorkflow = workflows[activeTab];
 
   return (
-    <section className="py-24 bg-[#0a0a0e] border-t border-slate-900 relative">
+    <section className="py-24 bg-[#ffffff] border-t border-black/5 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="text-xs font-bold tracking-widest uppercase text-red-500 mb-2">
+          <div className="text-xs font-bold tracking-widest uppercase text-[#b71c1c] mb-2">
             Streamlined Operations
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] tracking-tight uppercase">
             HOW IT WORKS.
           </h2>
-          <p className="text-slate-400 mt-4 text-sm sm:text-base leading-relaxed">
+          <p className="text-[#666666] mt-4 text-sm sm:text-base leading-relaxed">
             Transparent, predictable processes engineered to get commercial drivers and fleet owners back on the road without delays.
           </p>
         </div>
 
         {/* Service Switcher Tabs */}
         <div className="flex justify-center mb-12">
-          <div className="p-1 rounded-2xl bg-slate-950 border border-slate-800 flex items-center gap-1">
+          <div className="p-1 rounded-2xl bg-[#f4f4f2] border border-black/5 flex items-center gap-1">
             <button
               onClick={() => setActiveTab('buy')}
               className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 ${
                 activeTab === 'buy'
-                  ? 'bg-red-600 text-white shadow-md shadow-red-600/30'
-                  : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                  ? 'bg-[#b71c1c] text-white shadow-md shadow-[#b71c1c]/25'
+                  : 'text-[#666666] hover:text-[#111111] hover:bg-white'
               }`}
             >
               <Truck className="w-4 h-4" />
@@ -110,8 +110,8 @@ export const HowItWorks: React.FC = () => {
               onClick={() => setActiveTab('sell')}
               className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 ${
                 activeTab === 'sell'
-                  ? 'bg-red-600 text-white shadow-md shadow-red-600/30'
-                  : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                  ? 'bg-[#b71c1c] text-white shadow-md shadow-[#b71c1c]/25'
+                  : 'text-[#666666] hover:text-[#111111] hover:bg-white'
               }`}
             >
               <DollarSign className="w-4 h-4" />
@@ -122,8 +122,8 @@ export const HowItWorks: React.FC = () => {
               onClick={() => setActiveTab('roadside')}
               className={`px-4 sm:px-6 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 ${
                 activeTab === 'roadside'
-                  ? 'bg-red-600 text-white shadow-md shadow-red-600/30'
-                  : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                  ? 'bg-[#b71c1c] text-white shadow-md shadow-[#b71c1c]/25'
+                  : 'text-[#666666] hover:text-[#111111] hover:bg-white'
               }`}
             >
               <Wrench className="w-4 h-4" />
@@ -133,17 +133,17 @@ export const HowItWorks: React.FC = () => {
         </div>
 
         {/* Workflow Overview Card */}
-        <div className="p-6 sm:p-10 rounded-2xl bg-[#0e0e13] border border-slate-800 shadow-2xl">
-          <div className="mb-10 text-center sm:text-left sm:flex items-center justify-between border-b border-slate-800/80 pb-6">
+        <div className="p-6 sm:p-10 rounded-2xl bg-white border border-black/5 shadow-[0_20px_35px_rgba(17,17,17,0.04)]">
+          <div className="mb-10 text-center sm:text-left sm:flex items-center justify-between border-b border-black/10 pb-6">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-red-500">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#b71c1c]">
                 {currentWorkflow.badge}
               </span>
-              <h3 className="text-2xl font-black text-white tracking-tight mt-1 uppercase">
+              <h3 className="text-2xl font-black text-[#111111] tracking-tight mt-1 uppercase">
                 {currentWorkflow.title}
               </h3>
             </div>
-            <p className="text-xs sm:text-sm text-slate-400 max-w-md mt-2 sm:mt-0 leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#666666] max-w-md mt-2 sm:mt-0 leading-relaxed">
               {currentWorkflow.description}
             </p>
           </div>
@@ -156,15 +156,15 @@ export const HowItWorks: React.FC = () => {
             {currentWorkflow.steps.map((step, idx) => (
               <div key={idx} className="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
                 {/* Step Circle Indicator */}
-                <div className="w-14 h-14 rounded-2xl bg-slate-950 border-2 border-red-500 flex items-center justify-center text-red-400 font-mono font-bold text-lg shadow-lg shadow-red-600/25 mb-5">
+                <div className="w-14 h-14 rounded-2xl bg-[#fff3f3] border-2 border-[#b71c1c] flex items-center justify-center text-[#b71c1c] font-mono font-bold text-lg shadow-lg shadow-[#b71c1c]/15 mb-5">
                   {step.number}
                 </div>
 
-                <h4 className="text-base font-bold text-white tracking-tight mb-2">
+                <h4 className="text-base font-bold text-[#111111] tracking-tight mb-2">
                   {step.title}
                 </h4>
 
-                <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#666666] leading-relaxed">
                   {step.description}
                 </p>
               </div>

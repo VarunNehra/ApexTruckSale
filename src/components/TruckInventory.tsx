@@ -60,22 +60,22 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
   };
 
   return (
-    <section id="buy-trucks" className="py-24 bg-[#07070a] border-t border-slate-900 relative">
+    <section id="buy-trucks" className="py-24 bg-[#f7f7f4] border-t border-black/5 relative">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-red-600/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-0 w-80 h-80 bg-rose-700/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#b71c1c]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 left-0 w-80 h-80 bg-[#b71c1c]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <div className="text-xs font-bold tracking-widest uppercase text-red-500 mb-2">
+            <div className="text-xs font-bold tracking-widest uppercase text-[#b71c1c] mb-2">
               Commercial Fleet Inventory
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] tracking-tight uppercase">
               THE RIGHT TRUCK. THE RIGHT DEAL.
             </h2>
-            <p className="text-slate-400 mt-3 max-w-2xl text-sm sm:text-base leading-relaxed">
+            <p className="text-[#666666] mt-3 max-w-2xl text-sm sm:text-base leading-relaxed">
               Browse our inspected commercial Class-8 inventory or contact our acquisition desk to sell or trade your current tractors.
             </p>
           </div>
@@ -84,16 +84,16 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
           <div className="shrink-0">
             <button
               onClick={onNavigateToSell}
-              className="px-5 py-2.5 text-xs font-bold tracking-wide uppercase text-red-400 hover:text-white bg-slate-900 hover:bg-slate-800 rounded-xl border border-red-900/50 hover:border-red-500 transition-all flex items-center gap-2"
+              className="px-5 py-2.5 text-xs font-bold tracking-wide uppercase text-[#111111] hover:text-white bg-white hover:bg-[#111111] rounded-xl border border-black/10 hover:border-[#111111] transition-all flex items-center gap-2 shadow-sm"
             >
               <span>Have a truck to sell?</span>
-              <ArrowRight className="w-3.5 h-3.5 text-red-500" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#b71c1c]" />
             </button>
           </div>
         </div>
 
         {/* Filter Controls Bar */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-[#0e0e13] border border-slate-800/80 mb-10 shadow-xl space-y-4">
+        <div className="p-4 sm:p-5 rounded-2xl bg-white border border-black/5 mb-10 shadow-[0_20px_30px_rgba(17,17,17,0.04)] space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
             {/* Search Input */}
             <div className="md:col-span-4 relative">
@@ -159,8 +159,8 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
                 onClick={() => setSelectedMake(make)}
                 className={`px-3.5 py-1.5 font-bold rounded-lg whitespace-nowrap shrink-0 transition-all ${
                   selectedMake === make
-                    ? 'bg-red-600 text-white shadow-md shadow-red-600/30'
-                    : 'bg-slate-950 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+                    ? 'bg-[#b71c1c] text-white shadow-md shadow-[#b71c1c]/25'
+                    : 'bg-[#f3f3f1] text-[#666666] hover:text-[#111111] hover:bg-[#eceae6] border border-black/5'
                 }`}
               >
                 {make}
@@ -171,14 +171,14 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
 
         {/* Truck Listings Grid */}
         {filteredTrucks.length === 0 ? (
-          <div className="p-12 text-center rounded-2xl bg-[#0e0e13] border border-slate-800">
-            <p className="text-slate-300 font-bold mb-2">No matching commercial trucks found</p>
-            <p className="text-xs text-slate-500 mb-4">
+          <div className="p-12 text-center rounded-2xl bg-white border border-black/5 shadow-[0_18px_30px_rgba(17,17,17,0.04)]">
+            <p className="text-[#111111] font-bold mb-2">No matching commercial trucks found</p>
+            <p className="text-xs text-[#666666] mb-4">
               Try adjusting your filter parameters or contact our procurement specialists for incoming yard deliveries.
             </p>
             <button
               onClick={handleResetFilters}
-              className="px-5 py-2 text-xs font-bold text-red-400 bg-slate-900 border border-slate-800 rounded-xl hover:bg-slate-800 transition-colors"
+              className="px-5 py-2 text-xs font-bold text-[#111111] bg-[#f3f3f1] border border-black/5 rounded-xl hover:bg-[#ebebea] transition-colors"
             >
               Reset Filters
             </button>
@@ -188,7 +188,7 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
             {filteredTrucks.map((truck) => (
               <div
                 key={truck.id}
-                className="group rounded-2xl bg-[#0e0e13] border border-slate-800/80 hover:border-red-600/50 transition-all duration-300 overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-600/10 flex flex-col justify-between"
+                className="group rounded-2xl bg-[#b71c1c] text-white border border-[#b71c1c] transition-all duration-300 overflow-hidden shadow-[0_20px_30px_rgba(183,28,28,0.18)] hover:shadow-[0_24px_36px_rgba(183,28,28,0.25)] flex flex-col justify-between"
               >
                 <div>
                   {/* Image Container */}
@@ -208,7 +208,7 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
                       </span>
                     </div>
                     <div className="absolute top-3 right-3">
-                      <span className="px-2.5 py-1 rounded-md bg-red-950/80 backdrop-blur-md text-red-300 text-xs font-bold border border-red-500/40">
+                      <span className="px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-md text-white text-xs font-bold border border-white/25">
                         {truck.condition}
                       </span>
                     </div>
@@ -218,17 +218,17 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
                   <div className="p-5">
                     {/* Make / Model / Year Title */}
                     <div className="flex items-start justify-between gap-2 mb-1.5">
-                      <h3 className="text-lg font-black text-white tracking-tight group-hover:text-red-400 transition-colors">
+                      <h3 className="text-lg font-black text-white tracking-tight">
                         {truck.year} {truck.make} {truck.model}
                       </h3>
                     </div>
 
-                    <div className="text-xs text-slate-400 font-medium mb-4 line-clamp-1">
+                    <div className="text-xs text-white/80 font-medium mb-4 line-clamp-1">
                       {truck.trim}
                     </div>
 
                     {/* Unboxed Metadata with clean typographic separators (Zero-Pill Discipline) */}
-                    <div className="flex items-center flex-wrap gap-2 text-xs text-slate-300 font-mono tabular-nums mb-4 pb-4 border-b border-slate-800/60 font-semibold">
+                    <div className="flex items-center flex-wrap gap-2 text-xs text-white/80 font-mono tabular-nums mb-4 pb-4 border-b border-white/20 font-semibold">
                       <span>{truck.mileage.toLocaleString()} mi</span>
                       <span aria-hidden="true" className="text-slate-600">·</span>
                       <span>{truck.horsepower} HP</span>
@@ -237,13 +237,13 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
                     </div>
 
                     {/* Powertrain highlights */}
-                    <div className="space-y-1.5 text-xs text-slate-300 mb-5">
+                    <div className="space-y-1.5 text-xs text-white/80 mb-5">
                       <div className="flex items-center gap-2">
-                        <Zap className="w-3.5 h-3.5 text-red-500 shrink-0" />
+                        <Zap className="w-3.5 h-3.5 text-white shrink-0" />
                         <span className="truncate">{truck.engine}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Gauge className="w-3.5 h-3.5 text-red-500 shrink-0" />
+                        <Gauge className="w-3.5 h-3.5 text-white shrink-0" />
                         <span className="truncate">{truck.transmission}</span>
                       </div>
                     </div>
@@ -251,9 +251,9 @@ export const TruckInventory: React.FC<TruckInventoryProps> = ({ onInquireTruck, 
                 </div>
 
                 {/* Card Footer with Price and Actions */}
-                <div className="p-5 pt-0 border-t border-slate-800/60 mt-auto">
+                <div className="p-5 pt-0 border-t border-white/20 mt-auto">
                   <div className="flex items-baseline justify-between mb-4 pt-3">
-                    <span className="text-xs text-slate-400">Offered At</span>
+                    <span className="text-xs text-white/80">Offered At</span>
                     <span className="text-xl font-black text-white font-mono tabular-nums tracking-tight">
                       {typeof truck.price === 'number' ? `$${truck.price.toLocaleString()}` : truck.price}
                     </span>

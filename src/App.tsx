@@ -44,7 +44,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#07070a] text-slate-100 flex flex-col font-sans selection:bg-red-600/30 selection:text-red-200">
+    <div className="min-h-screen bg-[#ffffff] text-[#111111] flex flex-col font-sans selection:bg-[#b71c1c]/15 selection:text-[#111111]">
       {/* Sticky Top Navigation */}
       <Navbar onOpenQuote={handleOpenGeneralQuote} />
 

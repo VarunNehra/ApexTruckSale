@@ -81,10 +81,10 @@ export const RoadsideAssistance: React.FC = () => {
   };
 
   return (
-    <section id="roadside" className="py-24 bg-[#060609] border-t border-red-950/60 relative overflow-hidden">
-      {/* Visual Red Accent Glows */}
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-0 left-10 w-[400px] h-[400px] bg-rose-700/10 rounded-full blur-[120px] pointer-events-none" />
+    <section id="roadside" className="py-24 bg-[#ffffff] border-t border-black/5 relative overflow-hidden">
+      {/* Visual Accent Glows */}
+      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#b71c1c]/8 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-[400px] h-[400px] bg-[#b71c1c]/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Contrast Emergency Red & Black Banner Header */}
@@ -95,17 +95,17 @@ export const RoadsideAssistance: React.FC = () => {
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
-              <div className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-red-500">
-                <Radio className="w-4 h-4 text-red-500" />
+              <div className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-[#b71c1c]">
+                <Radio className="w-4 h-4 text-[#b71c1c]" />
                 <span>Commercial Roadside Operations</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight uppercase">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] tracking-tight leading-tight uppercase">
                 WHEN THE ROAD STOPS, <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-300 to-white">
+                <span className="text-[#b71c1c]">
                   WE SHOW UP.
                 </span>
               </h2>
-              <p className="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl">
+              <p className="text-[#666666] text-sm sm:text-base leading-relaxed max-w-2xl">
                 Get in touch when your truck needs roadside support. Tell us where you are and what happened, and our team will help coordinate the next steps.
               </p>
 

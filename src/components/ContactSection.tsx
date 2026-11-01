@@ -71,17 +71,17 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#07070a] border-t border-slate-900 relative">
+    <section id="contact" className="py-24 bg-[#ffffff] border-t border-black/5 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Headline */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-xs font-bold tracking-widest uppercase text-red-500 mb-2">
+          <div className="text-xs font-bold tracking-widest uppercase text-[#b71c1c] mb-2">
             Get in Touch
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] tracking-tight uppercase">
             LET'S GET YOUR BUSINESS MOVING.
           </h2>
-          <p className="text-slate-400 mt-4 text-sm sm:text-base leading-relaxed">
+          <p className="text-[#666666] mt-4 text-sm sm:text-base leading-relaxed">
             Reach out to our sales team, tire technicians, or dispatch desk. We are here to keep your freight rolling.
           </p>
         </div>
@@ -90,23 +90,23 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-20">
           {/* Left Column: Official Details & Hours */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="p-6 sm:p-7 rounded-2xl bg-[#0e0e13] border border-slate-800 shadow-xl space-y-6">
-              <h3 className="text-lg font-black text-white tracking-tight uppercase">
+            <div className="p-6 sm:p-7 rounded-2xl bg-white border border-black/5 shadow-[0_18px_30px_rgba(17,17,17,0.04)] space-y-6">
+              <h3 className="text-lg font-black text-[#111111] tracking-tight uppercase">
                 Dealership & Operations Headquarters
               </h3>
 
-              <div className="space-y-4 text-xs sm:text-sm text-slate-300">
+              <div className="space-y-4 text-xs sm:text-sm text-[#666666]">
                 {/* Phone */}
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-red-600/10 border border-red-500/30 flex items-center justify-center text-red-500 shrink-0 mt-0.5">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-slate-400 block text-xs">Direct Commercial Phone</span>
-                    <a href="tel:15593442990" className="font-bold text-white hover:text-red-400 transition-colors font-mono">
+                    <span className="text-[#666666] block text-xs">Direct Commercial Phone</span>
+                    <a href="tel:15593442990" className="font-bold text-[#111111] hover:text-red-500 transition-colors font-mono">
                       (559) 344-2990
                     </a>
-                    <span className="block text-slate-500 text-[11px]">Fresno Sales Office: 3712 W Franklin Ave, Fresno, CA 93706</span>
+                    <span className="block text-[#666666] text-[11px]">Fresno Sales Office: 3712 W Franklin Ave, Fresno, CA 93706</span>
                   </div>
                 </div>
 
@@ -116,11 +116,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-slate-400 block text-xs">Email Correspondence</span>
-                    <a href="mailto:info@apextrucksales.com" className="font-bold text-white hover:text-red-400 transition-colors">
+                    <span className="text-[#666666] block text-xs">Email Correspondence</span>
+                    <a href="mailto:info@apextrucksales.com" className="font-bold text-[#111111] hover:text-red-500 transition-colors">
                       info@apextrucksales.com
                     </a>
-                    <span className="block text-slate-500 text-[11px]">Emergency Dispatch: dispatch@apextrucksales.com</span>
+                    <span className="block text-[#666666] text-[11px]">Emergency Dispatch: dispatch@apextrucksales.com</span>
                   </div>
                 </div>
 
@@ -130,30 +130,30 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-slate-400 block text-xs">Physical Yard & Showroom</span>
-                    <span className="font-bold text-white block">
+                    <span className="text-[#666666] block text-xs">Physical Yard & Showroom</span>
+                    <span className="font-bold text-[#111111] block">
                       3712 W Franklin Ave
                     </span>
-                    <span className="text-slate-400 text-xs">
+                    <span className="text-[#666666] text-xs">
                       Fresno, CA 93706
                     </span>
                   </div>
                 </div>
 
                 {/* Hours */}
-                <div className="flex items-start gap-3 pt-2 border-t border-slate-800">
+                <div className="flex items-start gap-3 pt-2 border-t border-black/10">
                   <div className="w-8 h-8 rounded-lg bg-red-600/10 border border-red-500/30 flex items-center justify-center text-red-500 shrink-0 mt-0.5">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-slate-400 block text-xs">Business & Dispatch Hours</span>
-                    <span className="font-bold text-white block">
+                    <span className="text-[#666666] block text-xs">Business & Dispatch Hours</span>
+                    <span className="font-bold text-[#111111] block">
                       Sales & Yard: Mon–Fri 8:00 AM – 6:00 PM EST
                     </span>
-                    <span className="text-slate-400 text-xs block">
+                    <span className="text-[#666666] text-xs block">
                       Saturday: 9:00 AM – 2:00 PM EST · Sunday: Closed
                     </span>
-                    <span className="text-red-400 text-xs font-bold block mt-1">
+                    <span className="text-red-500 text-xs font-bold block mt-1">
                       Roadside Dispatch Hotline: Monitored 24/7 on designated routes
                     </span>
                   </div>
@@ -164,7 +164,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
           {/* Right Column: Contact Form */}
           <div className="lg:col-span-7">
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#0e0e13] border border-slate-800 shadow-2xl">
+            <div className="p-6 sm:p-8 rounded-2xl bg-white border border-black/5 shadow-[0_24px_40px_rgba(17,17,17,0.06)]">
               {isSuccess ? (
                 <div className="py-8 text-center space-y-4 animate-in fade-in duration-200">
                   <div className="w-14 h-14 rounded-2xl bg-red-600/20 text-red-400 border border-red-500/40 flex items-center justify-center mx-auto">

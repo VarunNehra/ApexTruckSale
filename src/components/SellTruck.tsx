@@ -76,7 +76,7 @@ export const SellTruck: React.FC = () => {
   };
 
   return (
-    <section id="sell-truck" className="py-24 bg-[#0a0a0e] border-t border-slate-900 relative overflow-hidden">
+    <section id="sell-truck" className="py-24 bg-[#ffffff] border-t border-black/5 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Proposition & Process */}

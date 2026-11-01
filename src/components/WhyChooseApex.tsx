@@ -23,17 +23,17 @@ export const WhyChooseApex: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-[#07070a] border-t border-slate-900 relative">
+    <section className="py-24 bg-[#ffffff] border-t border-black/5 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-xs font-bold tracking-widest uppercase text-red-500 mb-2">
+          <div className="text-xs font-bold tracking-widest uppercase text-[#b71c1c] mb-2">
             The Apex Commitment
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight uppercase">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#111111] tracking-tight uppercase">
             BUILT ON TRUST. DRIVEN BY PERFORMANCE.
           </h2>
-          <p className="text-slate-400 mt-4 text-sm sm:text-base leading-relaxed">
+          <p className="text-[#666666] mt-4 text-sm sm:text-base leading-relaxed">
             Modern commercial fleets and independent owner-operators face demanding deadlines. Apex Truck Sales was engineered to eliminate friction across every stage of commercial vehicle ownership.
           </p>
         </div>
@@ -43,25 +43,25 @@ export const WhyChooseApex: React.FC = () => {
           {VALUE_PROPOSITIONS.map((prop, idx) => (
             <div
               key={idx}
-              className="group p-6 rounded-2xl bg-[#0e0e13] border border-slate-800/80 hover:border-red-600/50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-red-600/10 flex flex-col justify-between"
+              className="group p-6 rounded-2xl bg-[#b71c1c] border border-[#b71c1c] transition-all duration-300 shadow-[0_18px_30px_rgba(183,28,28,0.18)] hover:shadow-[0_24px_36px_rgba(183,28,28,0.24)] flex flex-col justify-between"
             >
               <div>
-                <div className="w-12 h-12 rounded-xl bg-slate-950 border border-slate-800 group-hover:border-red-500/40 group-hover:bg-red-600/10 flex items-center justify-center transition-colors mb-5">
+                <div className="w-12 h-12 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center transition-colors mb-5 text-white">
                   {getIcon(prop.icon)}
                 </div>
 
-                <h3 className="text-lg font-black text-white tracking-tight group-hover:text-red-400 transition-colors mb-2">
+                <h3 className="text-lg font-black text-white tracking-tight mb-2">
                   {prop.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
                   {prop.description}
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-500 font-semibold">
+              <div className="mt-6 pt-4 border-t border-white/20 flex items-center justify-between text-[11px] text-white/80 font-semibold">
                 <span className="font-mono">Pillar 0{idx + 1}</span>
-                <span className="text-red-500">Apex Standard</span>
+                <span className="text-white">Apex Standard</span>
               </div>
             </div>
           ))}

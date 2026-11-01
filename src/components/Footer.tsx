@@ -11,53 +11,53 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#050508] border-t border-red-950/40 text-slate-400 text-xs">
+    <footer className="bg-[#ffffff] border-t border-black/5 text-[#666666] text-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
           {/* Brand Info with Apex Logo */}
           <div className="lg:col-span-4 space-y-4">
             <ApexLogo size="md" />
-            <p className="text-xs text-slate-400 leading-relaxed max-w-sm pt-1">
+            <p className="text-xs text-[#666666] leading-relaxed max-w-sm pt-1">
               Apex Truck Sales provides dependable commercial vehicle solutions: Class-8 tractor sales, direct purchase appraisals, commercial tires, and rapid roadside assistance.
             </p>
-            <div className="text-[11px] text-slate-500 font-mono">
+            <div className="text-[11px] text-[#666666] font-mono">
               USDOT & Commercial Motor Vehicle Equipment Specialist · Fresno, CA
             </div>
           </div>
 
           {/* Quick Navigation Links */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111]">
               Navigation
             </h4>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => handleScroll('#home')} className="hover:text-red-400 transition-colors">
+                <button onClick={() => handleScroll('#home')} className="hover:text-red-500 transition-colors text-[#111111]">
                   Home
                 </button>
               </li>
               <li>
-                <button onClick={() => handleScroll('#buy-trucks')} className="hover:text-red-400 transition-colors">
+                <button onClick={() => handleScroll('#buy-trucks')} className="hover:text-red-500 transition-colors text-[#111111]">
                   Buy a Truck
                 </button>
               </li>
               <li>
-                <button onClick={() => handleScroll('#sell-truck')} className="hover:text-red-400 transition-colors">
+                <button onClick={() => handleScroll('#sell-truck')} className="hover:text-red-500 transition-colors text-[#111111]">
                   Sell Your Truck
                 </button>
               </li>
               <li>
-                <button onClick={() => handleScroll('#truck-tires')} className="hover:text-red-400 transition-colors">
+                <button onClick={() => handleScroll('#truck-tires')} className="hover:text-red-500 transition-colors text-[#111111]">
                   Commercial Tires
                 </button>
               </li>
               <li>
-                <button onClick={() => handleScroll('#roadside')} className="hover:text-red-400 transition-colors">
+                <button onClick={() => handleScroll('#roadside')} className="hover:text-red-500 transition-colors text-[#111111]">
                   Roadside Assistance
                 </button>
               </li>
               <li>
-                <button onClick={() => handleScroll('#contact')} className="hover:text-red-400 transition-colors">
+                <button onClick={() => handleScroll('#contact')} className="hover:text-red-500 transition-colors text-[#111111]">
                   Contact
                 </button>
               </li>
@@ -66,52 +66,52 @@ export const Footer: React.FC = () => {
 
           {/* Services & Inventory */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111]">
               Commercial Offerings
             </h4>
             <ul className="space-y-2">
               <li>
-                <span className="text-slate-300">Freightliner Cascadia Sleepers</span>
+                <span className="text-[#666666]">Freightliner Cascadia Sleepers</span>
               </li>
               <li>
-                <span className="text-slate-300">Peterbilt 579 UltraLoft Tractors</span>
+                <span className="text-[#666666]">Peterbilt 579 UltraLoft Tractors</span>
               </li>
               <li>
-                <span className="text-slate-300">Kenworth T680 Next Gen Units</span>
+                <span className="text-[#666666]">Kenworth T680 Next Gen Units</span>
               </li>
               <li>
-                <span className="text-slate-300">Volvo VNL 860 Globetrotter</span>
+                <span className="text-[#666666]">Volvo VNL 860 Globetrotter</span>
               </li>
               <li>
-                <span className="text-slate-300">Commercial Steer, Drive & Trailer Tires</span>
+                <span className="text-[#666666]">Commercial Steer, Drive & Trailer Tires</span>
               </li>
               <li>
-                <span className="text-slate-300">Mobile On-Highway Tire Mounting</span>
+                <span className="text-[#666666]">Mobile On-Highway Tire Mounting</span>
               </li>
             </ul>
           </div>
 
           {/* Direct Contact */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#111111]">
               Direct Contact
             </h4>
             <div className="space-y-2 text-xs">
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-red-500" />
-                <a href="tel:15593442990" className="hover:text-red-400 transition-colors font-bold text-white font-mono">
+                <a href="tel:15593442990" className="hover:text-red-500 transition-colors font-bold text-[#111111] font-mono">
                   (559) 344-2990
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-red-500" />
-                <a href="mailto:info@apextrucksales.com" className="hover:text-red-400 transition-colors">
+                <a href="mailto:info@apextrucksales.com" className="hover:text-red-500 transition-colors text-[#111111]">
                   info@apextrucksales.com
                 </a>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-red-500 shrink-0 mt-0.5" />
-                <span>3712 W Franklin Ave, Fresno, CA 93706</span>
+                <span className="text-[#111111]">3712 W Franklin Ave, Fresno, CA 93706</span>
               </div>
             </div>
           </div>

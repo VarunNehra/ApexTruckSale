@@ -17,13 +17,13 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTrucks, onGetRoadside }) =>
         <img
           src={flagshipTruckImage}
           alt="Gleaming crimson red and chrome Class 8 semi-truck on American highway at dusk"
-          className="w-full h-full object-cover object-center scale-105 transform motion-safe:transition-transform motion-safe:duration-1000"
+          className="w-full h-full object-cover object-center scale-105 grayscale-[0.75] contrast-125 brightness-75 transform motion-safe:transition-transform motion-safe:duration-1000"
           referrerPolicy="no-referrer"
         />
-        {/* Multilayered cinematic dark scrim */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07070a] via-[#07070a]/85 to-[#07070a]/45" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#07070a] via-[#07070a]/65 to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(220,38,38,0.2),rgba(255,255,255,0))]" />
+        {/* Refined black-and-white cinematic scrim */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-[#0a0a0a]/60 to-[#0a0a0a]/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#090909]/90 via-[#090909]/40 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-10%,rgba(255,255,255,0.22),rgba(255,255,255,0))]" />
       </div>
 
       {/* Main Content Area */}
@@ -46,9 +46,9 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTrucks, onGetRoadside }) =>
             transition={{ duration: 0.5, delay: 0.1 }}
             className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase mb-4"
           >
-            <span className="text-red-500">Commercial Dealership & Fleet Support</span>
-            <span aria-hidden="true" className="text-slate-600">/</span>
-            <span className="text-slate-200">Powering Every Mile. Driving the Future.</span>
+            <span className="text-white/80">Commercial Dealership & Fleet Support</span>
+            <span aria-hidden="true" className="text-white/40">/</span>
+            <span className="text-white/70">Powering Every Mile. Driving the Future.</span>
           </motion.div>
 
           {/* Main Headline with White and Red Chrome Gradient */}
@@ -83,7 +83,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTrucks, onGetRoadside }) =>
           >
             <button
               onClick={onExploreTrucks}
-              className="px-8 py-4 text-xs font-black uppercase tracking-wider text-white bg-gradient-to-r from-red-600 via-rose-600 to-red-700 hover:from-red-500 hover:to-rose-500 rounded-xl shadow-xl shadow-red-600/30 border border-red-400/50 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3 group"
+              className="px-8 py-4 text-xs font-black uppercase tracking-wider text-white bg-[#b71c1c] rounded-xl shadow-[0_18px_32px_rgba(183,28,28,0.28)] border border-[#b71c1c] hover:-translate-y-0.5 hover:bg-[#8f1414] transition-all flex items-center justify-center gap-3 group"
             >
               <span>Explore Trucks</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -91,9 +91,9 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTrucks, onGetRoadside }) =>
 
             <button
               onClick={onGetRoadside}
-              className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-white bg-slate-900/90 hover:bg-slate-800/90 rounded-xl border border-red-500/50 hover:border-red-400 shadow-lg shadow-black/60 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3 group"
+              className="px-8 py-4 text-xs font-bold uppercase tracking-wider text-white bg-black/85 hover:bg-black rounded-xl border border-white/15 shadow-[0_16px_24px_rgba(0,0,0,0.22)] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-3 group"
             >
-              <Wrench className="w-4 h-4 text-red-500 group-hover:rotate-12 transition-transform" />
+              <Wrench className="w-4 h-4 text-white group-hover:rotate-12 transition-transform" />
               <span>Get Roadside Help</span>
             </button>
           </motion.div>
@@ -125,41 +125,41 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTrucks, onGetRoadside }) =>
 
       {/* 4-Column Bottom KPI / Trust Strip */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 p-4 rounded-2xl bg-[#0e0e13]/85 backdrop-blur-xl border border-red-950/60 shadow-2xl">
-          <div className="p-3.5 sm:p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-red-900/50 transition-colors">
-            <div className="text-[11px] uppercase tracking-wider text-slate-400 font-bold mb-1 flex items-center gap-2">
-              <Truck className="w-4 h-4 text-red-500" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 p-4 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/15 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
+          <div className="p-3.5 sm:p-4 rounded-xl bg-[#b71c1c] text-white border border-[#b71c1c] transition-colors">
+            <div className="text-[11px] uppercase tracking-wider text-white/80 font-bold mb-1 flex items-center gap-2">
+              <Truck className="w-4 h-4 text-white" />
               <span>Class-8 Trucks</span>
             </div>
             <div className="text-lg sm:text-xl font-black text-white tracking-tight">Inspected Inventory</div>
-            <div className="text-xs text-slate-400 mt-0.5">Ready for work & haul</div>
+            <div className="text-xs text-white/80 mt-0.5">Ready for work & haul</div>
           </div>
 
-          <div className="p-3.5 sm:p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-red-900/50 transition-colors">
-            <div className="text-[11px] uppercase tracking-wider text-slate-400 font-bold mb-1 flex items-center gap-2">
-              <Shield className="w-4 h-4 text-red-500" />
+          <div className="p-3.5 sm:p-4 rounded-xl bg-[#b71c1c] text-white border border-[#b71c1c] transition-colors">
+            <div className="text-[11px] uppercase tracking-wider text-white/80 font-bold mb-1 flex items-center gap-2">
+              <Shield className="w-4 h-4 text-white" />
               <span>Fleet Valuations</span>
             </div>
             <div className="text-lg sm:text-xl font-black text-white tracking-tight">Same-Day Purchase</div>
-            <div className="text-xs text-slate-400 mt-0.5">Fair cash appraisals</div>
+            <div className="text-xs text-white/80 mt-0.5">Fair cash appraisals</div>
           </div>
 
-          <div className="p-3.5 sm:p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-red-900/50 transition-colors">
-            <div className="text-[11px] uppercase tracking-wider text-slate-400 font-bold mb-1 flex items-center gap-2">
-              <Disc className="w-4 h-4 text-red-500" />
+          <div className="p-3.5 sm:p-4 rounded-xl bg-[#b71c1c] text-white border border-[#b71c1c] transition-colors">
+            <div className="text-[11px] uppercase tracking-wider text-white/80 font-bold mb-1 flex items-center gap-2">
+              <Disc className="w-4 h-4 text-white" />
               <span>Commercial Tires</span>
             </div>
             <div className="text-lg sm:text-xl font-black text-white tracking-tight">Tier-1 Inventory</div>
-            <div className="text-xs text-slate-400 mt-0.5">Steer, drive & trailer</div>
+            <div className="text-xs text-white/80 mt-0.5">Steer, drive & trailer</div>
           </div>
 
-          <div className="p-3.5 sm:p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-red-900/50 transition-colors">
-            <div className="text-[11px] uppercase tracking-wider text-slate-400 font-bold mb-1 flex items-center gap-2">
-              <Wrench className="w-4 h-4 text-red-500" />
+          <div className="p-3.5 sm:p-4 rounded-xl bg-[#b71c1c] text-white border border-[#b71c1c] transition-colors">
+            <div className="text-[11px] uppercase tracking-wider text-white/80 font-bold mb-1 flex items-center gap-2">
+              <Wrench className="w-4 h-4 text-white" />
               <span>Roadside Dispatch</span>
             </div>
             <div className="text-lg sm:text-xl font-black text-white tracking-tight">Dedicated Support</div>
-            <div className="text-xs text-slate-400 mt-0.5">(559) 344-2990 direct</div>
+            <div className="text-xs text-white/80 mt-0.5">(559) 344-2990 direct</div>
           </div>
         </div>
 
